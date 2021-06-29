@@ -1,0 +1,129 @@
+.wr-header-slider {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-items: flex-end;
+  padding-bottom: 15vh;
+}
+.header-slider.swiper-container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+.header-slider-slide {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.header-slider .header-slider-item h2 {
+  font-family: "Roboto-Light", sans-serif;
+  font-size: 35px;
+  letter-spacing: 8px;
+  color: #fff;
+  text-transform: uppercase;
+  // padding-top: 264px;
+}
+.header-slider .header-slider-item h2 + p {
+  font-family: "Roboto-Black", sans-serif;
+  font-size: 105px;
+  line-height: 86%;
+  letter-spacing: -1px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.header-slider .header-slider-item span {
+  font-family: "Roboto-Black", sans-serif;
+  font-size: 105px;
+  line-height: 86%;
+  letter-spacing: -1px;
+  color: #eec400;
+  text-transform: uppercase;
+}
+.header-slider .header-slider-item h3 {
+  font-family: "Raleway-Regular", sans-serif;
+  font-size: 36px;
+  text-transform: capitalize;
+  color: #fff;
+  padding-top: 19px;
+  padding-bottom: 24px;
+}
+.header-slider .header-slider-item p {
+  font-family: "Raleway-Regular", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  line-height: 170%;
+}
+// button--------------------------
+// --------------------------------
+.header-slider .header-slider-item .wr-button {
+  padding-top: 32px;
+  // padding-bottom: 270px;
+}
+.header-slider .header-slider-item .button {
+  width: 272px;
+  height: 70px;
+  background-color: #eec400;
+  border-radius: 5px;
+}
+.header-slider .header-slider-item .button span {
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 18px;
+  color: #404040;
+  text-transform: uppercase;
+  padding-right: 15px;
+}
+// arrows---------------------------------
+// -----------------------------------------
+.wr-header-slider {
+  position: relative;
+}
+.header-slider .swiper-button-prev::after,
+.header-slider .swiper-button-next::after {
+  content: "";
+}
+.wr-header-slider .swiper-button-next-uniq {
+  position: absolute;
+  top: 55%;
+  right: 50px;
+  opacity: 0.3;
+}
+.wr-header-slider .swiper-button-prev-uniq {
+  position: absolute;
+  top: 55%;
+  left: 50px;
+  opacity: 0.3;
+}
+.wr-header-slider .swiper-button-next-uniq:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.wr-header-slider .swiper-button-prev-uniq:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+// pagination-----------------------------
+// ----------------------------------------
+
+.wr-header-slider .swiper-pagination {
+  width: 100%;
+  // position: absolute;
+  bottom: 4.6%;
+  left: 15.6%;
+}
+.wr-header-slider .swiper-pagination-bullet {
+  margin-right: 13px;
+  width: 19px;
+  height: 5px;
+  background-color: #eec400;
+  border-radius: 0;
+  opacity: 1;
+}
+.wr-header-slider .swiper-pagination-bullet-active {
+  width: 34px;
+  height: 5px;
+  background-color: #fff;
+  opacity: 1;
+}

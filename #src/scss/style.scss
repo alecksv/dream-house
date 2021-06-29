@@ -1,3 +1,102 @@
-body {
-  background-color: black;
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"),
+      url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+@import "fonts";
+@import "settings";
+@import "header-slider";
+// @import "reset";
+
+// header navigation--------------------------------------
+
+.preview {
+  height: 100vh;
+  background-image: url(../img/header/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.preview .header {
+  background-color: #211f1f;
+}
+.header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 31px;
+  padding-top: 36px;
+}
+.header .nav-list a {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.logo img {
+  padding-right: 12px;
+}
+.nav-container .nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 25px;
+  text-transform: uppercase;
+  padding-top: 14px;
+}
+.nav-list .lock-open {
+  padding-left: 20px;
+}
+.nav-list .zoom {
+  padding-right: 0;
+}
+
+// wr-consult-----------------------------
+// ------------------------------------------
+.consult-section {
+  background-image: url("../img/header/consult.jpg");
+  background-size: cover;
+}
+.consult-section .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.consult-section p {
+  font-family: "Roboto-Black", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  padding-top: 73px;
+}
+.consult-section p + p {
+  font-family: "Raleway-Regular", sans-serif;
+  font-size: 14px;
+  padding-bottom: 80px;
+  padding-top: 0px;
+  text-transform: none;
+}
+.consult-section .button {
+  background-color: #404040;
+  color: #fff;
+  width: 272px;
+  height: 70px;
+  border-radius: 5px;
+  // letter-spacing: 1px;
+}
+.consult-section .button span {
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-right: 15px;
 }

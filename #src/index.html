@@ -4,14 +4,144 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
-    <title>Gulp</title>
+
+    <title>Dream House</title>
   </head>
   <body>
-    @@include('_header.html')
-    <!-- <img src="./img/DSC_0525.jpg" alt="" /> -->
+    <div class="preview">
+      <header class="header">
+        <div class="wrapper">
+          <div class="logo">
+            <a href="#">
+              <img src="./img/header/logo.png" alt="logo" />
+            </a>
+            <a href="#">
+              <img src="./img/header/structure.png" alt="structure" />
+            </a>
+          </div>
+          <div class="nav-container">
+            <ul class="nav-list">
+              <li><a href="#">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">gallery</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">team</a></li>
+              <li><a href="#">price</a></li>
+              <li><a href="#">news</a></li>
+              <li><a href="#">contact</a></li>
+              <li class="lock-open">
+                <img src="./img/header/lock-open.png" alt="lock-open" />
+              </li>
+              <li class="zoom">
+                <img src="./img/header/zoom.png" alt="zoom" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- header-slider ----------------------
+      ---------------------------------------------->
+      <div class="wr-header-slider">
+        <div class="header-slider swiper-container">
+          <div class="header-slider-wrapper swiper-wrapper">
+            <div class="header-slider-slide swiper-slide">
+              <div class="header-slider-item">
+                <h2>we build your</h2>
+                <p><span>dream</span> house</p>
+                <h3>fast & safe consruction</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  iure maxime voluptate ipsa inventore error consequuntur ab
+                  non. Tempore dolor libero reprehenderit illum. Explicabo amet,
+                  omnis sapiente expedita vel nam!
+                </p>
+                <div class="wr-button">
+                  <button class="button">
+                    <span>get a quote </span>
+                    <img src="./img/header/arrow-button.png" alt="arrow" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="header-slider-slide swiper-slide">
+              <div class="header-slider-item">
+                <h2>we plan your</h2>
+                <p><span>dream</span> house</p>
+                <h3>good & well consruction</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  iure maxime voluptate ipsa inventore error consequuntur ab
+                  non. Tempore dolor libero reprehenderit illum. Explicabo amet,
+                  omnis sapiente expedita vel nam!
+                </p>
+                <div class="wr-button">
+                  <button class="button">
+                    <span>get a quote </span>
+                    <img src="./img/header/arrow-button.png" alt="arrow" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="header-slider-slide swiper-slide">
+              <div class="header-slider-item">
+                <h2>we open your</h2>
+                <p><span>dream</span> house</p>
+                <h3>awesome & modern consruction</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  iure maxime voluptate ipsa inventore error consequuntur ab
+                  non. Tempore dolor libero reprehenderit illum. Explicabo amet,
+                  omnis sapiente expedita vel nam!
+                </p>
+                <div class="wr-button">
+                  <button class="button">
+                    <span>get a quote </span>
+                    <img src="./img/header/arrow-button.png" alt="arrow" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- arrows swiper slide -->
+        <div class="swiper-button-prev-uniq">
+          <img src="./img/header/arr-prev.png" alt="arrow-prev" />
+        </div>
+        <div class="swiper-button-next-uniq">
+          <img src="./img/header/arr-next.png" alt="arrow-next" />
+        </div>
+        <div class="swiper-pagination"></div>
 
-    <main class="main"></main>
+        <!-- <div class="wr-header-slider-dots"></div> -->
+      </div>
+
+      <!-- wr-consult ---------------------------
+      ---------------------------------------------->
+    </div>
+    <div class="consult-section">
+      <div class="wrapper">
+        <div class="consult">
+          <p>need to consult with us?</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint,
+            voluptatibus.
+          </p>
+        </div>
+        <div class="wr-button">
+          <button class="button">
+            <span>contact us</span>
+            <img src="./img/header/arr-but.png" alt="arrow" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.min.js"></script>
   </body>
 </html>
