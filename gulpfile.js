@@ -9,6 +9,7 @@ let path = {
     js: project_folder + "/js/",
     img: project_folder + "/img/",
     fonts: project_folder + "/fonts/",
+    video: project_folder + "/video/",
   },
   src: {
     html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
@@ -16,12 +17,14 @@ let path = {
     js: source_folder + "/js/script.js",
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
     fonts: source_folder + "/fonts/*.ttf",
+    video: source_folder + "/video/**/*.mp4",
   },
   watch: {
     html: source_folder + "/**/*.html",
     css: source_folder + "/scss/**/*.scss",
     js: source_folder + "/js/**/*.js",
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+    video: source_folder + "/video/**/*.mp4",
   },
   clean: "./" + project_folder + "/",
 };
@@ -127,66 +130,16 @@ function images() {
     .pipe(dest(path.build.img))
     .pipe(browsersync.stream());
 }
-
-// function testWebP(callback) {
-//   var webP = new Image();
-//   webP.onload = webP.onerror = function () {
-//     callback(webP.height == 2);
-//   };
-//   webP.src =
-//     "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-// }
-
-// testWebP(function (support) {
-//   if (support == true) {
-//     document.querySelector("body").classList.add("webp");
-//   } else {
-//     document.querySelector("body").classList.add("no-webp");
-//   }
-// });
+function video() {
+  return src(path.src.video)
+    .pipe(dest(path.build.video))
+    .pipe(browsersync.stream());
+}
 
 function fonts() {
   src(path.src.fonts).pipe(ttf2woff()).pipe(dest(path.build.fonts));
   return src(path.src.fonts).pipe(ttf2woff2()).pipe(dest(path.build.fonts));
 }
-
-// gulp.task("otf2ttf", function () {
-//   return src([source_folder + "/fonts/*.otf"])
-//     .pipe(
-//       fonter({
-//         formats: ["ttf"],
-//       })
-//     )
-//     .pipe(dest(source_folder + "/fonts/"));
-// });
-
-// function fontsStyle(params) {
-//   let file_content = fs.readFileSync(source_folder + "/scss/fonts.scss");
-//   if (file_content == "") {
-//     fs.writeFile(source_folder + "/scss/fonts.scss", "", cb);
-//     return fs.readdir(path.build.fonts, function (err, items) {
-//       if (items) {
-//         let c_fontname;
-//         for (var i = 0; i < items.length; i++) {
-//           let fontname = items[i].split(".");
-//           fontname = fontname[0];
-//           if (c_fontname != fontname) {
-//             fs.appendFile(
-//               source_folder + "/scss/fonts.scss",
-//               '@include font("' +
-//                 fontname +
-//                 '", "' +
-//                 fontname +
-//                 '", "400", "normal");\r\n',
-//               cb
-//             );
-//           }
-//           c_fontname = fontname;
-//         }
-//       }
-//     });
-//   }
-// }
 
 // function cb() {}
 
@@ -195,6 +148,7 @@ function watchFiles(params) {
   gulp.watch([path.watch.css], css);
   gulp.watch([path.watch.js], js);
   gulp.watch([path.watch.img], images);
+  gulp.watch([path.watch.video], video);
 }
 
 function clean(params) {
@@ -203,13 +157,14 @@ function clean(params) {
 
 let build = gulp.series(
   clean,
-  gulp.parallel(js, css, html, images, fonts)
+  gulp.parallel(js, css, html, images, fonts, video)
   // fontsStyle
 );
 
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 // exports.fontsStyle = fontsStyle;
+exports.video = video;
 exports.fonts = fonts;
 exports.images = images;
 exports.js = js;

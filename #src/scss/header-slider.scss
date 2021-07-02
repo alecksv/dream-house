@@ -5,6 +5,7 @@
   align-items: flex-end;
   padding-bottom: 15vh;
 }
+
 .header-slider.swiper-container {
   max-width: 1200px;
   padding-left: 15px;
@@ -107,11 +108,12 @@
 // pagination-----------------------------
 // ----------------------------------------
 
-.wr-header-slider .swiper-pagination {
-  width: 100%;
-  // position: absolute;
-  bottom: 4.6%;
-  left: 15.6%;
+.wr-header-slider .wrapper-pagination {
+  // width: 100%;
+  // // position: absolute;
+  // bottom: 4.6%;
+  // // left: 23%;
+  // text-align: center;
 }
 .wr-header-slider .swiper-pagination-bullet {
   margin-right: 13px;

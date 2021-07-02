@@ -1,0 +1,20 @@
+.video {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  box-sizing: border-box;
+  background-color: #000;
+  margin: 0 auto;
+}
+// .video video {
+//   height: 625px;
+//   width: 100%;
+// }
+
+.video video[poster] {
+  object-fit: cover;
+}
+video {
+  width: 100%;
+  height: 625px;
+}

@@ -11,6 +11,10 @@
 @import "fonts";
 @import "settings";
 @import "header-slider";
+@import "cards";
+@import "video";
+@import "offering";
+
 // @import "reset";
 
 // header navigation--------------------------------------
@@ -73,13 +77,13 @@
   justify-content: space-between;
   align-items: center;
 }
-.consult-section p {
+.consult-section h2 {
   font-family: "Roboto-Black", sans-serif;
   font-size: 36px;
   text-transform: uppercase;
   padding-top: 73px;
 }
-.consult-section p + p {
+.consult-section h2 + p {
   font-family: "Raleway-Regular", sans-serif;
   font-size: 14px;
   padding-bottom: 80px;
@@ -100,3 +104,6 @@
   text-transform: uppercase;
   padding-right: 15px;
 }
+
+// cards------------------------------------
+// -----------------------------------------

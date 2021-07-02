@@ -195,12 +195,6 @@ a {
   cursor: pointer;
 }
 
-.wr-header-slider .swiper-pagination {
-  width: 100%;
-  bottom: 4.6%;
-  left: 15.6%;
-}
-
 .wr-header-slider .swiper-pagination-bullet {
   margin-right: 13px;
   width: 19px;
@@ -215,6 +209,267 @@ a {
   height: 5px;
   background-color: #fff;
   opacity: 1;
+}
+
+.cards {
+  background-color: #fff;
+}
+
+.cards-header {
+  padding-top: 102px;
+  padding-bottom: 76px;
+  text-align: center;
+}
+
+.cards-header h2 {
+  padding-bottom: 13px;
+}
+
+.p-cards {
+  letter-spacing: 0.8px;
+}
+
+.p-cards .span-cards {
+  margin-left: 20px;
+  margin-right: 20px;
+  letter-spacing: 3.8px;
+}
+
+.cards-header p {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.cards-header h2,
+.cards-header h2 span {
+  font-family: "Roboto-Black", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.cards-header h2 span {
+  color: #eec400;
+}
+
+.cards-header h2 + p {
+  font-family: "Raleway-Regular", sans-serif;
+  font-size: 14px;
+  text-transform: none;
+  line-height: 24px;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+.cards-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Raleway-Regular", sans-serif;
+  font-size: 14px;
+  padding: 70px 20px 66px;
+  border: 2px solid #eec400;
+}
+
+.card-item.card-one {
+  background-color: #eec400;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.card-item.card-two {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.card-item.card-three {
+  margin-left: 15px;
+}
+
+.card-item.card-three img {
+  padding-top: 16px;
+}
+
+.card-item.card-one button {
+  color: #fff;
+}
+
+.card-item h2 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-top: 23px;
+}
+
+.card-item h2 span {
+  font-family: "Roboto-Black", sans-serif;
+  font-size: 24px;
+}
+
+.card-item.card-two h2 span {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 24px;
+}
+
+.card-item.card-two h2 {
+  font-family: "Roboto-Black", sans-serif;
+  font-size: 24px;
+}
+
+.card-item p {
+  text-align: center;
+  line-height: 24px;
+  padding-top: 13px;
+}
+
+.card-item button {
+  border: none;
+  background-color: inherit;
+}
+
+.card-item button span {
+  font-family: "Roboto-Black", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+
+.video {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #000;
+  margin: 0 auto;
+}
+
+.video video[poster] {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+video {
+  width: 100%;
+  height: 625px;
+}
+
+.offering .wrapper {
+  padding-top: 100px;
+}
+
+.offering-header {
+  text-align: center;
+}
+
+.offering-header p span {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+
+.offering-header p {
+  letter-spacing: 9px;
+}
+
+.offering img {
+  padding-right: 30px;
+}
+
+.offering-header h2 {
+  font-family: "Roboto-Black", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.offering-header h2 span {
+  color: #eec400;
+}
+
+.container-1,
+.container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.offering h3 {
+  font-family: "Roboto-Black", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  letter-spacing: -0.2px;
+}
+
+.offering h3 span {
+  font-family: "Roboto-light", sans-serif;
+}
+
+.architecture,
+.energy,
+.painting,
+.transport,
+.service,
+.support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 92px;
+  padding-right: 85px;
+  padding-bottom: 98px;
+}
+
+.transport,
+.service,
+.support {
+  padding-top: 0;
+}
+
+.support,
+.painting {
+  padding-right: 0;
+}
+
+.container-1 p,
+.container-2 p {
+  line-height: 23px;
 }
 
 .preview {
@@ -305,14 +560,14 @@ a {
           align-items: center;
 }
 
-.consult-section p {
+.consult-section h2 {
   font-family: "Roboto-Black", sans-serif;
   font-size: 36px;
   text-transform: uppercase;
   padding-top: 73px;
 }
 
-.consult-section p + p {
+.consult-section h2 + p {
   font-family: "Raleway-Regular", sans-serif;
   font-size: 14px;
   padding-bottom: 80px;
