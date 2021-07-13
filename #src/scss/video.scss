@@ -4,12 +4,8 @@
   background-position: left center;
   box-sizing: border-box;
   background-color: #000;
-  margin: 0 auto;
+  margin: 100px auto 0;
 }
-// .video video {
-//   height: 625px;
-//   width: 100%;
-// }
 
 .video video[poster] {
   object-fit: cover;

@@ -1,0 +1,40 @@
+.subscribe {
+  background-color: #f8f8f8;
+}
+.subscribe-header-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 160px;
+  padding-top: 160px;
+}
+.subscribe-email {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.subscribe-email input[type="email"] {
+  width: 368px;
+  padding: 15px 15px;
+  border-radius: 5px 0px 0px 5px;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 14px;
+  opacity: 0.5;
+  border-right: none;
+}
+.subscribe-email input[type="submit"] {
+  padding: 15px 50px;
+  border-radius: 0px 5px 5px 0px;
+  margin-left: -5px;
+  background-color: #eec400;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 14px;
+  border-left: none;
+}
+
+.world-header h2 span {
+  letter-spacing: 1px;
+  padding-left: 6px;
+}

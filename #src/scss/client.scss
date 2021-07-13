@@ -1,0 +1,30 @@
+.client {
+  background-color: #f8f8f8;
+  padding-top: 60px;
+}
+.client-slider .swiper-container {
+  max-width: 450px;
+  margin: 100px auto;
+}
+.client-slider .slide-main svg {
+  width: 14px;
+}
+.client-slider .slide-header {
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto-Black", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.client-slider .slide-header p + p {
+  font-family: "Roboto-Light", sans-serif;
+  font-size: 12px;
+}
+
+.client-slider .slide-header img {
+  border-radius: 50%;
+}
+.client-slider .slide-main {
+  font-family: "Raleway-LightItalic", sans-serif;
+  font-size: 14px;
+}

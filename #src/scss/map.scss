@@ -1,0 +1,108 @@
+.map-info {
+  position: relative;
+  margin-top: 100px;
+}
+.map-image {
+  height: 590px;
+  width: 100%;
+  background-image: url(../img/map/map.png);
+  background-size: cover;
+}
+.map-color {
+  background-color: #f8f8f8;
+  height: 711px;
+}
+.map-info .wrapper {
+  position: relative;
+}
+.map-form-input {
+  padding-top: 30px;
+}
+.map-form-connection {
+  position: absolute;
+  background-color: #fff;
+  bottom: 0;
+  width: 100%;
+}
+.map-form {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 70px 100px;
+}
+.map-form .text-email-wr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 35px;
+}
+.map-form .map-form-input input[type="text"],
+.map-form-input input[type="email"] {
+  width: 455px;
+  height: 50px;
+
+  padding: 15px 15px;
+  border-radius: 5px;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 14px;
+  opacity: 0.5;
+}
+.map-form-input textarea[name="textarea"] {
+  width: 100%;
+  border-radius: 5px;
+}
+.map-info .wr-button {
+  padding-top: 30px;
+}
+.map-info .button {
+  width: 230px;
+  height: 65px;
+  background-color: #eec400;
+  border-radius: 5px;
+  border: none;
+}
+.map-info .button span {
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-right: 12px;
+  padding-left: 18px;
+}
+.office-email svg,
+.office-adress svg,
+.office-phone-number svg {
+  width: 35px;
+  fill: #000;
+}
+.map-connection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.office-adress,
+.office-phone-number,
+.office-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.office-svg {
+  border: 1px dashed #eec400;
+  padding: 10px 15px;
+}
+.data-office {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+}
+.data-office h3 {
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.map-connection {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  background-color: #f8f8f8;
+}

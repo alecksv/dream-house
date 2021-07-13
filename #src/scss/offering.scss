@@ -1,5 +1,5 @@
-.offering .wrapper {
-  padding-top: 100px;
+.offering {
+  margin-top: 100px;
 }
 .offering-header {
   text-align: center;
@@ -13,9 +13,6 @@
 .offering-header p {
   letter-spacing: 9px;
 }
-.offering img {
-  padding-right: 30px;
-}
 .offering-header h2 {
   font-family: "Roboto-Black", sans-serif;
   font-size: 36px;
@@ -24,6 +21,13 @@
 .offering-header h2 span {
   color: #eec400;
 }
+.offering img {
+  margin-right: 30px;
+  width: 43px;
+  height: 43px;
+  object-fit: contain;
+}
+
 .container-1,
 .container-2 {
   display: flex;
@@ -33,8 +37,8 @@
   font-family: "Roboto-Black", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  margin-top: 11px;
+  margin-bottom: 11px;
   letter-spacing: -0.2px;
 }
 .offering h3 span {
@@ -49,20 +53,23 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 92px;
-  padding-right: 85px;
-  padding-bottom: 98px;
+  margin-top: 92px;
+  margin-right: 85px;
+  margin-bottom: 98px;
 }
 .transport,
 .service,
 .support {
-  padding-top: 0;
+  margin-top: 0;
 }
 .support,
 .painting {
-  padding-right: 0;
+  margin-right: 0;
 }
 .container-1 p,
 .container-2 p {
   line-height: 23px;
+}
+svg {
+  fill: #eec400;
 }

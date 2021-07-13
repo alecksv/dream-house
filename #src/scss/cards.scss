@@ -1,28 +1,41 @@
 .cards {
   background-color: #fff;
 }
-
 .cards-header {
-  padding-top: 102px;
-  padding-bottom: 76px;
+  margin-top: 102px;
   text-align: center;
 }
 .cards-header h2 {
-  padding-bottom: 13px;
-}
-.p-cards {
-  letter-spacing: 0.8px;
-}
-.p-cards .span-cards {
-  margin-left: 20px;
-  margin-right: 20px;
-  letter-spacing: 3.8px;
+  margin-bottom: 13px;
 }
 .cards-header p {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
 }
+
+.cards-header .p-cards,
+.offering-header .p-cards,
+.projects-header .p-cards,
+.team-header .p-cards,
+.client-header .p-cards,
+.price-header .p-cards,
+.news-header .p-cards {
+  margin-left: 20px;
+  margin-right: 20px;
+  letter-spacing: 3.8px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.p-cards::before {
+  content: "---";
+  letter-spacing: 3.8px;
+}
+.p-cards::after {
+  content: "---";
+  letter-spacing: 3.8px;
+}
+
 .cards-header h2,
 .cards-header h2 span {
   font-family: "Roboto-Black", sans-serif;
@@ -37,14 +50,14 @@
   font-size: 14px;
   text-transform: none;
   line-height: 24px;
-  padding-right: 200px;
-  padding-left: 200px;
+  max-width: 780px;
+  margin: 0 auto;
 }
 .cards-items {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 100px;
+  margin-top: 76px;
 }
 .card-item {
   display: flex;
@@ -55,30 +68,16 @@
   font-size: 14px;
   padding: 70px 20px 66px;
   border: 2px solid #eec400;
+  width: 370px;
+  box-sizing: border-box;
+  transition-duration: 1s;
 }
-.card-item.card-one {
-  background-color: #eec400;
-  color: #fff;
-  margin-right: 15px;
-}
-.card-item.card-two {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-.card-item.card-three {
-  margin-left: 15px;
-}
-.card-item.card-three img {
-  padding-top: 16px;
-}
-.card-item.card-one button {
-  color: #fff;
-}
+
 .card-item h2 {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 24px;
   text-transform: uppercase;
-  padding-top: 23px;
+  margin-top: 23px;
 }
 .card-item h2 span {
   font-family: "Roboto-Black", sans-serif;
@@ -86,7 +85,6 @@
 }
 .card-item.card-two h2 span {
   font-family: "Roboto-Regular", sans-serif;
-  font-size: 24px;
 }
 .card-item.card-two h2 {
   font-family: "Roboto-Black", sans-serif;
@@ -95,9 +93,10 @@
 .card-item p {
   text-align: center;
   line-height: 24px;
-  padding-top: 13px;
+  margin-top: 13px;
 }
 .card-item button {
+  padding: 5px;
   border: none;
   background-color: inherit;
 }
@@ -105,5 +104,34 @@
   font-family: "Roboto-Black", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
-  padding-right: 10px;
+  margin-right: 10px;
+  transition-duration: 1s;
+}
+.card-item img {
+  height: 54px;
+  width: 100%;
+  object-fit: contain;
+  transition-duration: 1s;
+}
+.card-item svg {
+  height: 54px;
+  fill: black;
+  transition-duration: 1s;
+}
+.card-item:hover {
+  background-color: #eec400;
+  color: #fff;
+  transition-duration: 1s;
+}
+.card-item:hover svg {
+  fill: #fff;
+  transition-duration: 1s;
+}
+.card-item:hover button span {
+  color: #fff;
+  transition-duration: 1s;
+}
+.card-item button svg {
+  width: 20px;
+  height: 12px;
 }

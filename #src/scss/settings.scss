@@ -3,6 +3,10 @@
   padding: 0;
 }
 body {
+  font-family: "Raleway-Regular", sans-serif;
+  color: #212121;
+  background-color: #fff;
+
   overflow-x: hidden;
 }
 a {
@@ -16,6 +20,19 @@ a {
   margin-right: auto;
   box-sizing: border-box;
 }
-.button:hover {
+li:hover,
+a:hover {
   cursor: pointer;
+  transform: scale(1.2);
+}
+button:hover {
+  cursor: pointer;
+}
+button {
+  border: none;
+}
+button svg {
+  width: 20px;
+  height: 12px;
+  fill: #404040;
 }

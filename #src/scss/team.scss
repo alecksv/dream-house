@@ -1,0 +1,74 @@
+.team {
+  margin-top: 102px;
+}
+.team-header p span {
+  letter-spacing: 2.7px;
+}
+.team-header h2 + p {
+  letter-spacing: -0.8px;
+}
+
+// slider   ------------------
+.team-slider-wrapper.swiper-wrapper {
+  width: 100%;
+}
+.team-slider-block {
+  margin-top: 80px;
+}
+.team-slider-slide .slide-item {
+  position: relative;
+  width: 400px;
+  height: 470px;
+  background: center no-repeat url(../img/team/Rectangle.png);
+}
+.team-slider .slide-item.first {
+  position: relative;
+  width: 400px;
+  height: 470px;
+  background: center no-repeat url(../img/team/Rectangle.png);
+}
+
+.team-slider-slide .slide-item:hover {
+  cursor: pointer;
+  background: center no-repeat url(../img/team/Rectangle-10.png);
+  background-color: #eec400;
+}
+
+.team-slider .slide-item img {
+  position: absolute;
+  bottom: 0;
+}
+.team-slider .slide-item.second img {
+  position: absolute;
+  left: 25px;
+}
+.team-slider .slide-item.third img {
+  position: absolute;
+  right: 25px;
+}
+// pagination-----------------------
+.swiper-pagination-team {
+  text-align: center;
+  margin-top: 50px;
+}
+.team-slider.swiper-container .swipper-pagination-bullet {
+  width: 20px;
+  height: 5px;
+  background-color: #eec400;
+  border-radius: 0;
+  opacity: 1;
+}
+.swiper-pagination-team .swiper-pagination-bullet {
+  margin-right: 13px;
+  width: 19px;
+  height: 5px;
+  background-color: #eec400;
+  border-radius: 0;
+  opacity: 1;
+}
+.swiper-pagination-team .swiper-pagination-bullet-active {
+  width: 34px;
+  height: 5px;
+  background-color: #404040;
+  opacity: 1;
+}
