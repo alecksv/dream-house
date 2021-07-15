@@ -5,9 +5,7 @@
   margin-top: 102px;
   text-align: center;
 }
-.cards-header h2 {
-  margin-bottom: 13px;
-}
+
 .cards-header p {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 18px;
@@ -21,11 +19,18 @@
 .client-header .p-cards,
 .price-header .p-cards,
 .news-header .p-cards {
-  margin-left: 20px;
-  margin-right: 20px;
   letter-spacing: 3.8px;
   text-transform: uppercase;
   font-size: 18px;
+}
+.cards-header h2,
+.offering-header h2,
+.projects-header h2,
+.team-header h2,
+.client-header h2,
+.price-header h2,
+.news-header h2 {
+  margin-bottom: 13px;
 }
 .p-cards::before {
   content: "---";
@@ -45,7 +50,13 @@
 .cards-header h2 span {
   color: #eec400;
 }
-.cards-header h2 + p {
+.cards-header h2 + p,
+.offering-header h2 + p,
+.projects-header h2 + p,
+.team-header h2 + p,
+.client-header h2 + p,
+.price-header h2 + p,
+.news-header h2 + p {
   font-family: "Raleway-Regular", sans-serif;
   font-size: 14px;
   text-transform: none;
@@ -98,7 +109,8 @@
 .card-item button {
   padding: 5px;
   border: none;
-  background-color: inherit;
+  background-color: #fff;
+  transition-duration: 1s;
 }
 .card-item button span {
   font-family: "Roboto-Black", sans-serif;
@@ -111,7 +123,7 @@
   height: 54px;
   width: 100%;
   object-fit: contain;
-  transition-duration: 1s;
+  // transition-duration: 1s;
 }
 .card-item svg {
   height: 54px;
@@ -134,4 +146,7 @@
 .card-item button svg {
   width: 20px;
   height: 12px;
+}
+.card-item:hover button {
+  background-color: #eec400;
 }

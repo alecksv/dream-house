@@ -66,7 +66,7 @@
 }
 // button--------------------------
 // --------------------------------
-.header-slider-item .button {
+.button {
   width: 272px;
   height: 70px;
   background-color: #eec400;
@@ -76,19 +76,22 @@
   border: none;
   transition-duration: 1s;
 }
+.button svg {
+  transition-duration: 1s;
+}
 // hover  ------------------------------------
-.header-slider-item .button:hover {
+.button:hover {
   background-color: #4c413b;
   transition-duration: 1s;
 }
-.header-slider-item .button:hover span,
-.header-slider-item .button:hover svg {
+.button:hover span,
+.button:hover svg {
   transition-duration: 1s;
   color: #fff;
   fill: #fff;
 }
 
-.header-slider-item .button span {
+.button span {
   font-family: "Roboto-Bold", sans-serif;
   font-size: 18px;
   color: #404040;

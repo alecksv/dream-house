@@ -26,6 +26,7 @@
 @import "price";
 @import "news";
 @import "map";
+@import "footer";
 
 // header navigation--------------------------------------
 
@@ -147,9 +148,12 @@
   font-size: 18px;
   text-transform: uppercase;
   padding-right: 15px;
+  color: #fff;
+  transition-duration: 1s;
 }
 .consult-section .button svg {
   fill: #fff;
+  transition-duration: 1s;
 }
 .consult-section .button:hover {
   background-color: #4c413b;

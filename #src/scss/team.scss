@@ -4,9 +4,6 @@
 .team-header p span {
   letter-spacing: 2.7px;
 }
-.team-header h2 + p {
-  letter-spacing: -0.8px;
-}
 
 // slider   ------------------
 .team-slider-wrapper.swiper-wrapper {
@@ -17,34 +14,25 @@
 }
 .team-slider-slide .slide-item {
   position: relative;
-  width: 400px;
-  height: 470px;
-  background: center no-repeat url(../img/team/Rectangle.png);
-}
-.team-slider .slide-item.first {
-  position: relative;
-  width: 400px;
+  width: 350px;
   height: 470px;
   background: center no-repeat url(../img/team/Rectangle.png);
 }
 
-.team-slider-slide .slide-item:hover {
-  cursor: pointer;
-  background: center no-repeat url(../img/team/Rectangle-10.png);
-  background-color: #eec400;
-}
-
-.team-slider .slide-item img {
+.team-slider .slide-item.first img {
   position: absolute;
   bottom: 0;
+  left: -20px;
 }
 .team-slider .slide-item.second img {
   position: absolute;
-  left: 25px;
+  left: 20px;
+  bottom: 0;
 }
 .team-slider .slide-item.third img {
   position: absolute;
-  right: 25px;
+  right: 20px;
+  bottom: 0;
 }
 // pagination-----------------------
 .swiper-pagination-team {
@@ -71,4 +59,72 @@
   height: 5px;
   background-color: #404040;
   opacity: 1;
+}
+// fon-hover-------------------------------
+.team-slider-slide .slide-item {
+  position: relative;
+}
+// .team-slider-slide .slide-item::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: #eec400;
+//   opacity: 0;
+//   z-index: 5;
+// }
+.team-slider-slide .slide-item:hover::before {
+  opacity: 0.5;
+  z-index: 10;
+}
+.team-slider-slide .slide-item:hover svg,
+.team-slider-slide .slide-item:hover p {
+  opacity: 1;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.team-slider-slide .fb,
+.team-slider-slide .linkedin,
+.team-slider-slide .twitter {
+  background-color: inherit;
+  position: absolute;
+}
+.team-slider-slide .fb {
+  bottom: 40px;
+  left: 40px;
+}
+.team-slider-slide .linkedin {
+  bottom: 40px;
+  left: 80px;
+}
+.team-slider-slide .twitter {
+  bottom: 40px;
+  left: 120px;
+}
+.team-slider-slide svg {
+  width: 25px;
+  height: 25px;
+  fill: #fff;
+  opacity: 1;
+  z-index: 10;
+}
+.team-slider-slide .slide-item p + p {
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  font-family: "Roboto-Regular", serif;
+  font-size: 14px;
+}
+.team-slider-slide .slide-item p {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-family: "Roboto-Black", serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0;
 }

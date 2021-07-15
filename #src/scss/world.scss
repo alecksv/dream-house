@@ -9,7 +9,7 @@
   justify-content: flex-start;
 }
 .world-map img {
-  padding: 0px 15px 0px;
+  margin: 0px 15px 0px;
 }
 .world-header {
   max-width: 570px;
@@ -23,8 +23,7 @@
 .world-header p {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 14px;
-  padding-top: 15px;
-  padding-bottom: 8px;
+
   letter-spacing: 0.4px;
   line-height: 24px;
 }
@@ -41,14 +40,18 @@
   font-family: "Roboto-Black", sans-serif;
   font-size: 36px;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 .world-header h2 span {
   color: #eec400;
 }
 // button--------------------
 .world .wr-button {
-  padding-top: 64px;
   text-align: left;
+}
+.world .button:hover span {
+  color: #fff;
+  transition-duration: 1s;
 }
 .world .button {
   width: 230px;
@@ -61,6 +64,5 @@
   font-size: 18px;
   color: #404040;
   text-transform: uppercase;
-  padding-right: 12px;
-  padding-left: 18px;
+  transition-duration: 1s;
 }

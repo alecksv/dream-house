@@ -3,8 +3,8 @@
 }
 
 .news-header {
-  padding-top: 100px;
-  padding-bottom: 60px;
+  margin-top: 100px;
+  margin-bottom: 60px;
 }
 .news-cards {
   display: flex;
@@ -24,17 +24,17 @@
   overflow: hidden;
 }
 .news-post img {
-  padding-bottom: 35px;
+  margin-bottom: 35px;
   //   object-fit: cover;
 }
 .news-post h3 {
   font-size: 22px;
-  padding-top: 34px;
-  padding-bottom: 10px;
+  margin-top: 34px;
+  margin-bottom: 10px;
   letter-spacing: 0.5px;
 }
 .news-post p {
-  padding-bottom: 18px;
+  margin-bottom: 18px;
   line-height: 23px;
 }
 .news-post h3 + p {
@@ -45,12 +45,13 @@
 
 .news-post h3,
 .news-post p {
-  padding-left: 30px;
+  margin-left: 30px;
 }
 .news-post button {
   margin-left: 30px;
   border: none;
   background-color: #fff;
+  transition-duration: 1s;
 }
 .news-post button img {
   padding-bottom: 0px;
@@ -59,8 +60,22 @@
   font-family: "Roboto-Bold", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
-  padding-right: 10px;
+  margin-right: 10px;
+  transition-duration: 1s;
 }
 .news-post button:hover {
   cursor: pointer;
+  transition-duration: 1s;
+  transform: scale(1.3);
+}
+.news-post button:hover span {
+  transition-duration: 1s;
+  transform: scale(1.3);
+  color: #eec400;
+}
+.news-post button:hover svg {
+  fill: #eec400;
+}
+.news-post button svg {
+  transition-duration: 1s;
 }

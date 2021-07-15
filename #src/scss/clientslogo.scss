@@ -10,7 +10,12 @@
   padding: 35px 40px;
   box-shadow: 0px 5px 15px #d8d6d6;
 }
-.clientslogo-images .center {
-  padding-left: 16px;
-  padding-right: 16px;
+.clientslogo-images img:last-child {
+  margin-right: 0;
+}
+.clientslogo-images img {
+  height: 64px;
+  max-width: 150px;
+  object-fit: contain;
+  margin-right: 10px;
 }

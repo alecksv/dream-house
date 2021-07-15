@@ -68,16 +68,23 @@
   padding-right: 12px;
   padding-left: 18px;
 }
+.map-info .button:hover span {
+  color: #eec400;
+}
+.map-info .button:hover {
+  background-color: #4c413b;
+}
 .office-email svg,
 .office-adress svg,
 .office-phone-number svg {
   width: 35px;
   fill: #000;
+  transition-duration: 2s;
 }
 .map-connection {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .office-adress,
 .office-phone-number,
@@ -85,6 +92,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-right: 60px;
+}
+.office-email {
+  margin-right: 0;
 }
 .office-svg {
   border: 1px dashed #eec400;
@@ -94,15 +105,57 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 15px;
+  margin-left: 30px;
 }
 .data-office h3 {
-  font-family: "Roboto-Bold", sans-serif;
-  font-size: 18px;
+  font-family: "Roboto-Black", sans-serif;
+  font-size: 24px;
   text-transform: uppercase;
 }
 .map-connection {
   padding-top: 90px;
   padding-bottom: 100px;
   background-color: #f8f8f8;
+}
+.office-adress .office-svg:hover svg {
+  transition-duration: 2s;
+  transform: scale(1.5);
+}
+
+.office-phone-number .office-svg:hover svg {
+  animation: 1s ease-in-out 0s normal none infinite running trambling-animation;
+}
+@keyframes trambling-animation {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10%,
+  30% {
+    transform: rotate(-10deg);
+  }
+  20%,
+  40% {
+    transform: rotate(10deg);
+  }
+}
+
+.office-email .office-svg:hover svg {
+  animation: 2s ease-in-out 0s normal none infinite running top-down;
+}
+@keyframes top-down {
+  0%,
+  100% {
+    transform: skewY(10deg);
+  }
+  20%,
+  75% {
+    transform: skewY(-10deg);
+  }
+  40%,
+  50%,
+  60% {
+    transform: scale(1.5);
+  }
 }

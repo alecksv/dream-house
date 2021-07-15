@@ -1,0 +1,144 @@
+.footer {
+  background-color: #424242;
+  background-size: cover;
+  background-image: url("../img/footer/world-background.png");
+  font-family: "Raleway-Regular", serif;
+  font-size: 14px;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  line-height: 24px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.footer-inner .structure {
+  max-width: 270px;
+}
+.footer-inner .our-services {
+  max-width: 170px;
+}
+.footer-inner .recent-tweets {
+  max-width: 270px;
+}
+.footer-inner .get-in-touch {
+  max-width: 370px;
+}
+.footer-inner a {
+  font-family: "Raleway-Regular", serif;
+  font-size: 14px;
+  color: #fff;
+  transition-duration: 1.5s;
+}
+.footer-inner a:hover {
+  color: #eec400;
+  transition-duration: 1.5s;
+}
+.footer-inner h2 {
+  margin-bottom: 40px;
+}
+.footer-inner h2 a {
+  font-family: "Roboto-Black", serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  transition-duration: 1.5s;
+}
+.footer-inner .structure h2 + p {
+  margin-bottom: 30px;
+}
+.footer-inner .structure h2 img {
+  vertical-align: bottom;
+}
+.footer-inner .structure p {
+  font-family: "Raleway-LightItalic", serif;
+}
+.footer-inner .our-services li a:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 5px 0px 5px 7px;
+  border-color: transparent transparent transparent #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  vertical-align: baseline;
+}
+// .our-services li a:hover :before {
+//   border-color: #eec400;
+// }
+
+.footer-inner .our-services li {
+  //   margin-bottom: 15px;
+  margin-left: 15px;
+}
+.footer-inner .recent-tweets .voice {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.voice {
+  //   margin-bottom: 50px;
+}
+.voice button {
+  margin-right: 5px;
+  background-color: inherit;
+  padding: 0;
+  line-height: 0;
+}
+.voice p {
+  line-height: 28px;
+}
+.voice svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+.voice a {
+  color: #eec400;
+}
+.get-in-touch svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  opacity: 0.5;
+  transition-duration: 1.5s;
+}
+.get-in-touch h3 {
+  color: #eec400;
+  font-family: "Roboto-Bold", serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.get-in-touch .block-connections {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  //   height: inherit;
+}
+.block-inet a {
+  margin-right: 10px;
+}
+
+.footer-inner .block-wrapper {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.footer h2 a:hover {
+  color: #eec400;
+  transition-duration: 1.5s;
+}
+.recent-tweets p a:hover {
+  color: rgb(95, 172, 235);
+}
+.block-inet a:hover svg {
+  fill: #eec400;
+  transition-duration: 1.5s;
+  opacity: 1;
+  transform: scale(1.2);
+}
