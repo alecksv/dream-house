@@ -9,6 +9,12 @@
   background-color: #fff;
   padding: 35px 40px;
   box-shadow: 0px 5px 15px #d8d6d6;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    text-align: center;
+    height: 700px;
+    padding: 5px 5px;
+  }
 }
 .clientslogo-images img:last-child {
   margin-right: 0;
@@ -18,4 +24,11 @@
   max-width: 150px;
   object-fit: contain;
   margin-right: 10px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 120px;
+    max-width: 250px;
+  }
 }

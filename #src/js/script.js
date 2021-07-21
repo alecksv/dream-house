@@ -14,7 +14,7 @@ const header = new Swiper(".header-slider ", {
   },
 });
 
-const project = new Swiper(".projects-slider", {
+const project = new Swiper(".projects-slider-container", {
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next-uniq1",
@@ -23,6 +23,20 @@ const project = new Swiper(".projects-slider", {
   loop: true,
   slidesPerView: 4,
   spaceBetween: 0,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    400: {
+      slidesPerView: 2,
+    },
+    800: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
 });
 
 const team = new Swiper(".team-slider", {
@@ -37,18 +51,16 @@ const team = new Swiper(".team-slider", {
   },
 });
 
-const client = new Swiper(".client-slider", {
+const client = new Swiper(".client-slider-container", {
+  direction: "vertical",
+  loop: "true",
+
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next-uniq3",
     prevEl: ".swiper-button-prev-uniq3",
+    disabledClass: ".swiper-button-disabled",
   },
-  loop: true,
   slidesPerView: 1,
-  spaceBetween: 150,
-  pagination: {
-    el: ".swiper-pagination-client",
-    type: "bullets",
-    clickable: true,
-  },
+  spaceBetween: 10,
 });

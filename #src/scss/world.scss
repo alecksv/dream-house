@@ -2,17 +2,34 @@
   padding-top: 80px;
   padding-bottom: 100px;
   background-color: #f8f8f8;
+  @media (max-width: 1050px) {
+    padding-bottom: 20px;
+  }
 }
 .world-map {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  @media (max-width: 1050px) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .world-map img {
   margin: 0px 15px 0px;
+  @media (max-width: 1050px) {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+  }
 }
 .world-header {
   max-width: 570px;
+  @media (max-width: 1050px) {
+    margin-left: 15px;
+    max-width: 100%;
+    text-align: center;
+  }
 }
 .world-header p span {
   font-family: "Roboto-Regular", sans-serif;
@@ -23,6 +40,9 @@
 .world-header p {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 14px;
+  @media (max-width: 800px) {
+    line-height: 20px;
+  }
 
   letter-spacing: 0.4px;
   line-height: 24px;
@@ -41,6 +61,14 @@
   font-size: 36px;
   text-transform: uppercase;
   margin-bottom: 15px;
+  line-height: 42px;
+  @media (max-width: 800px) {
+    font-size: 30px;
+    line-height: 20px;
+  }
+  @media (max-width: 490px) {
+    font-size: 20px;
+  }
 }
 .world-header h2 span {
   color: #eec400;
@@ -48,6 +76,9 @@
 // button--------------------
 .world .wr-button {
   text-align: left;
+  @media (max-width: 800px) {
+    text-align: center;
+  }
 }
 .world .button:hover span {
   color: #fff;
@@ -58,6 +89,12 @@
   height: 63px;
   background-color: #eec400;
   border-radius: 5px;
+  margin-top: 72px;
+  @media (max-width: 800px) {
+    width: 160px;
+    height: 50px;
+    margin-top: 10px;
+  }
 }
 .world .button span {
   font-family: "Roboto-Bold", sans-serif;

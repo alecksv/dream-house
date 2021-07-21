@@ -22,6 +22,9 @@
   letter-spacing: 3.8px;
   text-transform: uppercase;
   font-size: 18px;
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
 }
 .cards-header h2,
 .offering-header h2,
@@ -46,6 +49,12 @@
   font-family: "Roboto-Black", sans-serif;
   font-size: 36px;
   text-transform: uppercase;
+  @media (max-width: 800px) {
+    font-size: 30px;
+  }
+  @media (max-width: 490px) {
+    font-size: 20px;
+  }
 }
 .cards-header h2 span {
   color: #eec400;
@@ -69,6 +78,10 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: 76px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    margin-top: 0;
+  }
 }
 .card-item {
   display: flex;
@@ -82,8 +95,27 @@
   width: 370px;
   box-sizing: border-box;
   transition-duration: 1s;
+  @media (max-width: 1400px) {
+    width: 300px;
+    margin-top: 10px;
+    padding: 20px 20px 20px;
+  }
+  @media (max-width: 1050px) {
+    width: 230px;
+    padding: 20px 20px 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  @media (max-width: 800px) {
+    padding: 70px 20px 66px;
+    width: 370px;
+  }
+  @media (max-width: 490px) {
+    width: 270px;
+    margin-top: 10px;
+    padding: 20px 20px 20px;
+  }
 }
-
 .card-item h2 {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 24px;

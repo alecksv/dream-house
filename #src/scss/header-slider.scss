@@ -11,8 +11,8 @@
 
 .header-slider.swiper-container {
   max-width: 1200px;
-  padding-left: 16px;
-  padding-right: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
@@ -30,6 +30,12 @@
   color: #fff;
   text-transform: uppercase;
   padding-left: 2px;
+  @media (max-width: 800px) {
+    font-size: 30px;
+  }
+  @media (max-width: 490px) {
+    font-size: 20px;
+  }
 }
 .header-slider-item h1 {
   font-family: "Roboto-Black", sans-serif;
@@ -39,14 +45,26 @@
   color: #fff;
   text-transform: uppercase;
   padding-left: 2px;
+  @media (max-width: 800px) {
+    font-size: 60px;
+  }
+  @media (max-width: 490px) {
+    font-size: 40px;
+  }
 }
-.header-slider-item span {
+.header-slider-item h1 span {
   font-family: "Roboto-Black", sans-serif;
   font-size: 105px;
   line-height: 86%;
   letter-spacing: -1px;
   color: #eec400;
   text-transform: uppercase;
+  @media (max-width: 800px) {
+    font-size: 60px;
+  }
+  @media (max-width: 490px) {
+    font-size: 40px;
+  }
 }
 .header-slider-item h3 {
   font-family: "Raleway-Regular", sans-serif;
@@ -55,6 +73,12 @@
   color: #fff;
   margin-left: 2px;
   margin-top: 19px;
+  @media (max-width: 800px) {
+    font-size: 30px;
+  }
+  @media (max-width: 490px) {
+    font-size: 20px;
+  }
 }
 .header-slider-item p {
   font-family: "Raleway-Regular", sans-serif;
@@ -75,6 +99,10 @@
   margin-left: 2px;
   border: none;
   transition-duration: 1s;
+  @media (max-width: 800px) {
+    width: 160px;
+    height: 50px;
+  }
 }
 .button svg {
   transition-duration: 1s;
@@ -97,9 +125,11 @@
   color: #404040;
   text-transform: uppercase;
   margin-right: 15px;
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
 }
-// .header-slider-item .button:hover {
-// }
+
 // arrows---------------------------------
 // -----------------------------------------
 .wr-header-slider {
@@ -114,12 +144,14 @@
   top: 50%;
   right: 50px;
   opacity: 0.3;
+  z-index: 20;
 }
 .wr-header-slider .swiper-button-prev-uniq {
   position: absolute;
   top: 50%;
   left: 50px;
   opacity: 0.3;
+  z-index: 20;
 }
 .wr-header-slider .swiper-button-next-uniq:hover {
   opacity: 1;
@@ -138,10 +170,25 @@
   background-color: #eec400;
   border-radius: 0;
   opacity: 1;
+  @media (max-width: 800px) {
+    width: 10px;
+    height: 3px;
+  }
 }
 .swiper-pagination-header .swiper-pagination-bullet-active {
   width: 34px;
   height: 5px;
   background-color: #fff;
   opacity: 1;
+  @media (max-width: 800px) {
+    width: 20px;
+    height: 3px;
+  }
+}
+.wrap-for-pagination .swiper-pagination-header {
+  padding-left: 16px;
+  margin-top: 80px;
+  @media (max-width: 800px) {
+    margin-top: 10px;
+  }
 }

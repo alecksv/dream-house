@@ -27,6 +27,12 @@
 .footer-inner .get-in-touch {
   max-width: 370px;
 }
+.footer-inner .our-services h2,
+.footer-inner .recent-tweets h2,
+.footer-inner .get-in-touch h2 {
+  padding-top: 5px;
+}
+
 .footer-inner a {
   font-family: "Raleway-Regular", serif;
   font-size: 14px;
@@ -38,7 +44,8 @@
   transition-duration: 1.5s;
 }
 .footer-inner h2 {
-  margin-bottom: 40px;
+  margin-bottom: 28px;
+  // line-height: 30px;
 }
 .footer-inner h2 a {
   font-family: "Roboto-Black", serif;
@@ -73,21 +80,20 @@
 
 .footer-inner .our-services li {
   //   margin-bottom: 15px;
-  margin-left: 15px;
+  // margin-left: 15px;
 }
 .footer-inner .recent-tweets .voice {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
-.voice {
-  //   margin-bottom: 50px;
-}
+
 .voice button {
   margin-right: 5px;
   background-color: inherit;
   padding: 0;
   line-height: 0;
+  height: 25px;
 }
 .voice p {
   line-height: 28px;
@@ -101,8 +107,8 @@
   color: #eec400;
 }
 .get-in-touch svg {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   fill: #fff;
   opacity: 0.5;
   transition-duration: 1.5s;
@@ -140,5 +146,21 @@
   fill: #eec400;
   transition-duration: 1.5s;
   opacity: 1;
-  transform: scale(1.2);
+  // transform: scale(1.2);
+}
+.footer-basement {
+  background-color: #2f2f2f;
+  color: #fff;
+  font-family: "Roboto-Bold", serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.footer-basement span {
+  color: #eec400;
+}
+.footer-basement p {
+  letter-spacing: 0.6px;
 }

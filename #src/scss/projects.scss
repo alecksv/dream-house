@@ -28,6 +28,12 @@
   font-family: "Roboto-Black", sans-serif;
   font-size: 36px;
   text-transform: uppercase;
+  @media (max-width: 800px) {
+    font-size: 30px;
+  }
+  @media (max-width: 490px) {
+    font-size: 20px;
+  }
 }
 .projects-header h2 span {
   color: #eec400;
@@ -38,6 +44,10 @@
   justify-content: center;
   margin-bottom: 15px;
   margin-top: 45px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    margin-top: 10px;
+  }
 }
 .projects-header li {
   list-style-type: none;
@@ -51,11 +61,20 @@
 .projects-header a {
   color: #000;
 }
+.projects-header li a:active {
+  color: #1ab1ec;
+  border-bottom: #1ab1ec 1px solid;
+}
 .projects-header a:hover {
   border-bottom: #eec400 1px solid;
   color: #eec400;
 }
+
 // swiper slider----------------------
+.projects-slider {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 .projects-slider .slide-item {
   position: relative;
 }
@@ -64,12 +83,7 @@
   height: 400px;
   object-fit: cover;
 }
-// .projects-slider .slide-item:hover img {
-//   cursor: pointer;
-//   // background-color: #eec400;
-//   // z-index: 10;
-//   opacity: 0.4;
-// }
+
 .projects-slider .slide-item::before {
   content: "";
   position: absolute;
@@ -135,15 +149,21 @@
   position: absolute;
   top: 55%;
   right: 70px;
-  opacity: 0.3;
+  opacity: 0.5;
   z-index: 10;
+  @media (max-width: 1200px) {
+    right: 30px;
+  }
 }
 .projects-slider .swiper-button-prev-uniq1 {
   position: absolute;
   top: 55%;
   left: 70px;
-  opacity: 0.3;
+  opacity: 0.5;
   z-index: 10;
+  @media (max-width: 1200px) {
+    left: 30px;
+  }
 }
 .projects-slider .swiper-button-next-uniq1:hover {
   opacity: 1;
@@ -164,6 +184,9 @@
   background-color: #eec400;
   border-radius: 5px;
   margin-top: 96px;
+  @media (max-width: 800px) {
+    margin-top: 20px;
+  }
 }
 .projects .button span {
   font-family: "Roboto-Bold", sans-serif;

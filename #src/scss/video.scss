@@ -5,6 +5,10 @@
   box-sizing: border-box;
   background-color: #000;
   margin: 100px auto 0;
+  @media (max-width: 800px) {
+    margin: 0 10px;
+    margin-top: 20px;
+  }
 }
 
 .video video[poster] {
@@ -13,4 +17,7 @@
 video {
   width: 100%;
   height: 625px;
+  @media (max-width: 800px) {
+    height: 425px;
+  }
 }
