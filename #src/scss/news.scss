@@ -1,10 +1,13 @@
 .news {
   background-color: #f8f8f8;
 }
-
 .news-header {
   margin-top: 100px;
   margin-bottom: 60px;
+  @media (max-width: 1200px) {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
 }
 .news-cards {
   display: flex;
@@ -13,10 +16,20 @@
   font-family: "Raleway-Regular", sans-serif;
   font-size: 12px;
   text-transform: capitalize;
+  @media (max-width: 1400px) {
+    flex-direction: column;
+  }
 }
 .news-post {
   width: 370px;
   background-color: #fff;
+  @media (max-width: 1400px) {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 490px) {
+    width: 270px;
+  }
 }
 .news-post-img {
   box-sizing: border-box;

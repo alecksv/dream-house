@@ -27,7 +27,7 @@ const project = new Swiper(".projects-slider-container", {
     0: {
       slidesPerView: 1,
     },
-    400: {
+    700: {
       slidesPerView: 2,
     },
     800: {
@@ -42,12 +42,24 @@ const project = new Swiper(".projects-slider-container", {
 const team = new Swiper(".team-slider", {
   // Navigation arrows
   loop: true,
+
   slidesPerView: 3,
   spaceBetween: 0,
   pagination: {
     el: ".swiper-pagination-team",
     type: "bullets",
     clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    850: {
+      slidesPerView: 2,
+    },
+    1400: {
+      slidesPerView: 3,
+    },
   },
 });
 
@@ -64,3 +76,10 @@ const client = new Swiper(".client-slider-container", {
   slidesPerView: 1,
   spaceBetween: 10,
 });
+
+document.querySelector(".burger").addEventListener("click", () => {
+  document.querySelector(".nav-list").classList.toggle("visual");
+});
+// document.querySelector(".burger2").addEventListener("click", () => {
+//   document.querySelector(".projects-links").classList.toggle("visual");
+// });

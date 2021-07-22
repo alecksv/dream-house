@@ -1,43 +1,82 @@
 .team {
   margin-top: 102px;
+  @media (max-width: 490px) {
+    margin-top: 40px;
+  }
 }
 .team-header p span {
   letter-spacing: 2.7px;
 }
 
 // slider   ------------------
+
 .team-slider-wrapper.swiper-wrapper {
   width: 100%;
 }
 .team-slider-block {
   margin-top: 80px;
+  @media (max-width: 490px) {
+    margin-top: 40px;
+  }
 }
 .team-slider-slide .slide-item {
   position: relative;
   width: 350px;
   height: 470px;
+  background-size: cover;
+  // width: 100%;
   background: center no-repeat url(../img/team/Rectangle.png);
+  @media (max-width: 490px) {
+    width: 250px;
+    height: 335px;
+    background-size: contain;
+  }
 }
 
 .team-slider .slide-item.first img {
   position: absolute;
   bottom: 0;
   left: -20px;
+  @media (max-width: 490px) {
+    width: 200px;
+    height: 300px;
+    background-size: contain;
+    position: absolute;
+    bottom: 14px;
+    left: 25px;
+  }
 }
 .team-slider .slide-item.second img {
   position: absolute;
   left: 20px;
   bottom: 0;
+  @media (max-width: 490px) {
+    width: 200px;
+    height: 300px;
+    background-size: contain;
+    position: absolute;
+    left: 20px;
+    bottom: 14px;
+  }
 }
 .team-slider .slide-item.third img {
   position: absolute;
   right: 20px;
   bottom: 0;
+  @media (max-width: 490px) {
+    width: 200px;
+    height: 300px;
+    background-size: contain;
+    position: absolute;
+    right: 20px;
+    bottom: 14px;
+  }
 }
 // pagination-----------------------
 .swiper-pagination-team {
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 10px;
 }
 .team-slider.swiper-container .swipper-pagination-bullet {
   width: 20px;
@@ -63,24 +102,38 @@
 // fon-hover-------------------------------
 .team-slider-slide .slide-item {
   position: relative;
+  margin: 0 auto;
 }
-// .team-slider-slide .slide-item::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   background-color: #eec400;
-//   opacity: 0;
-//   z-index: 5;
-// }
+.team-slider-slide .slide-item::before {
+  content: "";
+  width: 350px;
+  height: 470px;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(238, 196, 0, 0.8);
+  background: center no-repeat url(../img/team/Rectangle-10.png);
+  opacity: 0;
+  @media (max-width: 490px) {
+    width: 250px;
+    height: 335px;
+    background-size: contain;
+    position: absolute;
+    right: 20px;
+    bottom: 36px;
+  }
+}
 .team-slider-slide .slide-item:hover::before {
-  opacity: 0.5;
+  opacity: 1;
   z-index: 10;
+  background-color: rgba(238, 196, 0, 0.8);
 }
 .team-slider-slide .slide-item:hover svg,
-.team-slider-slide .slide-item:hover p {
+.team-slider-slide .slide-item:hover p,
+.team-slider-slide .slide-item:hover button {
   opacity: 1;
   z-index: 10;
   cursor: pointer;
@@ -107,8 +160,8 @@
 .team-slider-slide svg {
   width: 25px;
   height: 25px;
-  fill: #fff;
-  opacity: 1;
+  fill: #404040;
+  opacity: 0;
   z-index: 10;
 }
 .team-slider-slide .slide-item p + p {
@@ -117,14 +170,27 @@
   left: 40px;
   font-family: "Roboto-Regular", serif;
   font-size: 14px;
+  @media (max-width: 490px) {
+    font-size: 11px;
+  }
 }
 .team-slider-slide .slide-item p {
   position: absolute;
   top: 40px;
   left: 40px;
   font-family: "Roboto-Black", serif;
-  font-size: 14px;
+  font-size: 24px;
   text-transform: uppercase;
   color: #fff;
   opacity: 0;
+  @media (max-width: 490px) {
+    font-size: 18px;
+  }
+}
+.team-slider-slide p span {
+  font-family: "Roboto-Light", serif;
+  font-size: 24px;
+  @media (max-width: 490px) {
+    font-size: 18px;
+  }
 }

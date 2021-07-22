@@ -18,6 +18,9 @@
 .projects-header p:first-child {
   letter-spacing: 9px;
   padding-bottom: 0;
+  @media (max-width: 490px) {
+    letter-spacing: 0px;
+  }
 }
 
 .projects-header p + p {
@@ -44,9 +47,10 @@
   justify-content: center;
   margin-bottom: 15px;
   margin-top: 45px;
-  @media (max-width: 800px) {
+  @media (max-width: 1050px) {
     flex-direction: column;
     margin-top: 10px;
+    text-align: left;
   }
 }
 .projects-header li {
@@ -54,7 +58,22 @@
   text-transform: capitalize;
   letter-spacing: 0.8px;
   margin-right: 15px;
+  @media (max-width: 1050px) {
+    border: 2px solid #404040;
+    margin-right: 0px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #404040;
+  }
 }
+@media (max-width: 1050px) {
+  .projects-header li a {
+    font-size: 32px;
+    color: #fff;
+  }
+}
+
 .projects-header li:last-child {
   margin-right: 0;
 }
@@ -77,6 +96,7 @@
 }
 .projects-slider .slide-item {
   position: relative;
+  text-align: center;
 }
 .projects-slider .slide-item img {
   width: 400px;
@@ -140,6 +160,9 @@
 
 .projects-slider {
   position: relative;
+  @media (max-width: 1050px) {
+    margin-top: 20px;
+  }
 }
 .projects-slider .swiper-button-prev-uniq1::after,
 .projects-slider .swiper-button-next-uniq1::after {
@@ -154,6 +177,18 @@
   @media (max-width: 1200px) {
     right: 30px;
   }
+  @media (max-width: 700px) {
+    right: 150px;
+  }
+  @media (max-width: 600px) {
+    right: 100px;
+  }
+  @media (max-width: 500px) {
+    right: 50px;
+  }
+  @media (max-width: 400px) {
+    right: 10px;
+  }
 }
 .projects-slider .swiper-button-prev-uniq1 {
   position: absolute;
@@ -163,6 +198,18 @@
   z-index: 10;
   @media (max-width: 1200px) {
     left: 30px;
+  }
+  @media (max-width: 700px) {
+    left: 150px;
+  }
+  @media (max-width: 600px) {
+    left: 100px;
+  }
+  @media (max-width: 500px) {
+    left: 50px;
+  }
+  @media (max-width: 400px) {
+    left: 10px;
   }
 }
 .projects-slider .swiper-button-next-uniq1:hover {
@@ -200,4 +247,8 @@
   color: #fff;
   transition-duration: 1s;
 }
-// fon----------------------------------
+
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+}

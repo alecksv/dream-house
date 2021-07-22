@@ -28,27 +28,72 @@
   box-sizing: border-box;
   width: 100%;
   padding: 70px 100px;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: 1400px) {
+    padding: 30px 50px;
+  }
+  @media (max-width: 1050px) {
+    padding: 20px 30px;
+  }
+  @media (max-width: 850px) {
+    padding: 10px 20px;
+  }
 }
 .map-form .text-email-wr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 35px;
+  @media (max-width: 760px) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .map-form .map-form-input input[type="text"],
 .map-form-input input[type="email"] {
   width: 455px;
   height: 50px;
-
   padding: 15px 15px;
   border-radius: 5px;
   font-family: "Roboto-Bold", sans-serif;
   font-size: 14px;
   opacity: 0.5;
+  @media (max-width: 1400px) {
+    width: 400px;
+    height: 40px;
+  }
+  @media (max-width: 1050px) {
+    width: 300px;
+    height: 40px;
+  }
+  @media (max-width: 850px) {
+    width: 250px;
+    height: 40px;
+    padding: 5px 5px;
+  }
+  @media (max-width: 760px) {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    width: 250px;
+  }
+  @media (max-width: 490px) {
+    width: 200px;
+  }
 }
 .map-form-input textarea[name="textarea"] {
   width: 100%;
   border-radius: 5px;
+  @media (max-width: 850px) {
+    height: 200px;
+    width: 250px;
+  }
+  @media (max-width: 490px) {
+    width: 200px;
+  }
+}
+.textarea {
+  text-align: center;
 }
 .map-info .wr-button {
   padding-top: 30px;
@@ -59,6 +104,11 @@
   background-color: #eec400;
   border-radius: 5px;
   border: none;
+  @media (max-width: 490px) {
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+  }
 }
 .map-info .button span {
   font-family: "Roboto-Bold", sans-serif;

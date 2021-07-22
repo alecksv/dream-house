@@ -16,7 +16,7 @@
   }
 }
 .world-map img {
-  margin: 0px 15px 0px;
+  margin: 15px;
   @media (max-width: 1050px) {
     width: 90%;
     height: 90%;
@@ -36,6 +36,16 @@
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 3.7px;
+  @media (max-width: 490px) {
+    font-size: 12px;
+    letter-spacing: 3.7px;
+  }
+}
+.world-header p::after {
+  content: "----------------";
+  @media (max-width: 800px) {
+    display: none;
+  }
 }
 .world-header p {
   font-family: "Roboto-Regular", sans-serif;
@@ -64,10 +74,11 @@
   line-height: 42px;
   @media (max-width: 800px) {
     font-size: 30px;
-    line-height: 20px;
+    line-height: 30px;
   }
   @media (max-width: 490px) {
     font-size: 20px;
+    line-height: 20px;
   }
 }
 .world-header h2 span {
@@ -76,7 +87,7 @@
 // button--------------------
 .world .wr-button {
   text-align: left;
-  @media (max-width: 800px) {
+  @media (max-width: 1050px) {
     text-align: center;
   }
 }
@@ -90,10 +101,12 @@
   background-color: #eec400;
   border-radius: 5px;
   margin-top: 72px;
+  @media (max-width: 1050px) {
+    margin-top: 20px;
+  }
   @media (max-width: 800px) {
     width: 160px;
     height: 50px;
-    margin-top: 10px;
   }
 }
 .world .button span {

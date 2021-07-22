@@ -30,7 +30,7 @@
   color: #fff;
   text-transform: uppercase;
   padding-left: 2px;
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     font-size: 30px;
   }
   @media (max-width: 490px) {
@@ -45,7 +45,7 @@
   color: #fff;
   text-transform: uppercase;
   padding-left: 2px;
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     font-size: 60px;
   }
   @media (max-width: 490px) {
@@ -59,7 +59,7 @@
   letter-spacing: -1px;
   color: #eec400;
   text-transform: uppercase;
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     font-size: 60px;
   }
   @media (max-width: 490px) {
@@ -73,7 +73,7 @@
   color: #fff;
   margin-left: 2px;
   margin-top: 19px;
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     font-size: 30px;
   }
   @media (max-width: 490px) {
@@ -99,7 +99,7 @@
   margin-left: 2px;
   border: none;
   transition-duration: 1s;
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     width: 160px;
     height: 50px;
   }
@@ -125,7 +125,7 @@
   color: #404040;
   text-transform: uppercase;
   margin-right: 15px;
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     font-size: 14px;
   }
 }
@@ -170,7 +170,7 @@
   background-color: #eec400;
   border-radius: 0;
   opacity: 1;
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     width: 10px;
     height: 3px;
   }
@@ -180,7 +180,7 @@
   height: 5px;
   background-color: #fff;
   opacity: 1;
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     width: 20px;
     height: 3px;
   }
@@ -188,7 +188,7 @@
 .wrap-for-pagination .swiper-pagination-header {
   padding-left: 16px;
   margin-top: 80px;
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     margin-top: 10px;
   }
 }
