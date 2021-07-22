@@ -4,6 +4,9 @@
 .cards-header {
   margin-top: 102px;
   text-align: center;
+  @media (max-width: 490px) {
+    margin-top: 40px;
+  }
 }
 
 .cards-header p {

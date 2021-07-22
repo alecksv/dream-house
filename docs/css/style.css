@@ -2101,7 +2101,6 @@ svg {
   position: absolute;
   background-color: #fff;
   bottom: 0;
-  width: 100%;
 }
 
 .map-form {
@@ -2110,7 +2109,6 @@ svg {
   width: 100%;
   padding: 70px 100px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .map-form .text-email-wr {
@@ -2129,7 +2127,7 @@ svg {
 
 .map-form .map-form-input input[type="text"],
 .map-form-input input[type="email"] {
-  width: 455px;
+  width: 400px;
   height: 50px;
   padding: 15px 15px;
   border-radius: 5px;
@@ -2852,12 +2850,6 @@ svg {
     height: 40px;
   }
 
-  .map-connection {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-
   .office-adress,
   .office-phone-number,
   .office-email {
@@ -3044,19 +3036,6 @@ svg {
     height: 40px;
   }
 
-  .map-connection {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 250px;
-    padding-top: 40px;
-    padding-bottom: 30px;
-  }
-
   .office-adress,
   .office-phone-number,
   .office-email {
@@ -3190,6 +3169,10 @@ svg {
     padding-bottom: 30px;
   }
 
+  .map-image {
+    height: 350px;
+  }
+
   .map-form {
     padding: 10px 20px;
   }
@@ -3203,7 +3186,7 @@ svg {
 
   .map-form-input textarea[name="textarea"] {
     height: 200px;
-    width: 250px;
+    width: 500px;
   }
 
   .wrapper {
@@ -3440,6 +3423,10 @@ svg {
     font-size: 20px;
   }
 
+  .cards-header {
+    margin-top: 40px;
+  }
+
   .cards-header h2,
   .cards-header h2 span {
     font-size: 20px;
@@ -3486,12 +3473,12 @@ svg {
   }
 
   .team-slider .slide-item.first img {
-    width: 200px;
+    width: 285px;
     height: 300px;
     background-size: contain;
     position: absolute;
     bottom: 14px;
-    left: 25px;
+    left: -13px;
   }
 
   .team-slider .slide-item.second img {
@@ -3617,6 +3604,7 @@ svg {
 
   .consult-section h2 {
     font-size: 20px;
+    margin-top: 40px;
   }
 }
 

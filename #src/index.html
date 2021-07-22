@@ -19,7 +19,7 @@
       <div class="wrapper">
 
         <div class="logo">
-          <a href="#">
+          <a href="#" tabindex="1" id="home">
             <img src="./img/header/logo.png" alt="logo" />
             <img src="./img/header/structure.png" alt="structure" />
           </a>
@@ -29,17 +29,17 @@
           
           <div class="nav-list">            
             <ul>
-              <li><a href="#">home</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">gallery</a></li>
-              <li><a href="#">services</a></li>
-              <li><a href="#">team</a></li>
-              <li><a href="#">price</a></li>
-              <li><a href="#">news</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="#home" tabindex="2">home</a></li>
+              <li><a href="#about" tabindex="3">about</a></li>
+              <li><a href="#gallery" tabindex="4">gallery</a></li>
+              <li><a href="#services" tabindex="5">services</a></li>
+              <li><a href="#team" tabindex="6">team</a></li>
+              <li><a href="#price" tabindex="7">price</a></li>
+              <li><a href="#news" tabindex="8">news</a></li>
+              <li><a href="#contact" tabindex="9">contact</a></li>
             </ul>            
           </div>
-          <button class="lock-open">
+          <button class="lock-open" tabindex="10">
             <svg viewBox="0 0 426.667 426.667">
               <g>
                 <g>
@@ -57,7 +57,7 @@
             </svg>
             <!-- <img src="./img/header/lock-open.png" alt="lock-open" /> -->
           </button>
-          <button class="zoom">
+          <button class="zoom" tabindex="11">
             <svg viewBox="0 0 512.005 512.005">
               <g>
                 <g>
@@ -130,7 +130,7 @@
                   omnis sapiente expedita vel nam!
                 </p>
                 <div class="wr-button">
-                  <button class="button">
+                  <button class="button" tabindex="12">
                     <span>get a quote </span>
                     <svg viewBox="0 0 15.698 8.706">
                       <polygon
@@ -205,7 +205,7 @@
   <section class="cards">
     <div class="wrapper">
       <div class="cards-header">
-        <p class="p-cards">you are most</p>
+        <p class="p-cards" id="about">you are most</p>
         <h2>wellcome to <span>struc builder</span></h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -312,7 +312,7 @@
   <section class="offering">
     <div class="wrapper">
       <div class="offering-header">
-        <p class="p-cards">we are skilled for </p>
+        <p class="p-cards" id="services">we are skilled for </p>
         <h2>what <span>we are offering</span></h2>
       </div>
       <div class="container-1">
@@ -385,7 +385,7 @@
   <section class="projects">
     <div class="wrapper">
       <div class="projects-header">
-        <p class="p-cards"> Our projects</p>
+        <p class="p-cards" id="gallery"> Our projects</p>
         <h2>View our <span>projects gallery</span></h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -397,12 +397,12 @@
 
         <ul class="projects-links">
           
-          <li><a href="#">all</a></li>
-          <li><a href="#">constructions</a></li>
-          <li><a href="#">architecture</a></li>
-          <li><a href="#">building</a></li>
-          <li><a href="#">interior</a></li>
-          <li><a href="#">renovetion</a></li>
+          <li><a href="#" tabindex="12">all</a></li>
+          <li><a href="#" tabindex="13">constructions</a></li>
+          <li><a href="#" tabindex="14">architecture</a></li>
+          <li><a href="#" tabindex="15">building</a></li>
+          <li><a href="#" tabindex="16">interior</a></li>
+          <li><a href="#" tabindex="17">renovetion</a></li>
         </ul>
         
       </div>
@@ -819,7 +819,7 @@
   <section class="team">
     <div class="wrapper">
       <div class="team-header projects-header">
-        <p class="p-cards">WE have creative</p>
+        <p class="p-cards" id="team">WE have creative</p>
         <h2>Expert <span>team members</span></h2>
         <p>
           Dolore magna Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
@@ -1270,7 +1270,7 @@
     <div class="wrapper">
       <div class="price-header-main">
         <div class="price-header projects-header">
-          <p class="p-cards">We offer OUR</p>
+          <p class="p-cards" id="price">We offer OUR</p>
           <h2>Best <span>Pricing Plan</span></h2>
           <p>
             Dolore magna Quis nostrud exercitation ullamco laboris nisi ut
@@ -1337,7 +1337,7 @@
     <div class="wrapper">
       <div class="news-header-cards">
         <div class="news-header projects-header">
-          <p class="p-cards"> News Update</p>
+          <p class="p-cards" id="news"> News Update</p>
           <h2>Read <span> Recent News</span></h2>
           <p>
             Dolore magna Quis nostrud exercitation ullamco laboris nisi ut
@@ -1418,7 +1418,6 @@
     <div class="map-color"></div>
     <div class="wrapper">
       <div class="map-form-connection">
-
         <div class="map-form">
           <div class="world-header">
             <h2>Send <span>Massage</span>
@@ -1428,17 +1427,15 @@
             <form action="#" method="GET">
               <div class="text-email-wr">
                 <p>
-                  <input type="text" name="username" placeholder="enter your name...">
+                  <input tabindex="18" type="text" name="username" placeholder="enter your name...">
                 </p>
                 <p>
-                  <input type="email" name="user-email" placeholder="enter your email...">
+                  <input tabindex="19" type="email" name="user-email" placeholder="enter your email...">
                 </p>
               </div>
               <div class="textarea" >
-                <textarea name="textarea" cols="30" rows="20" placeholder="enter your text..."></textarea>
+                <textarea tabindex="20" name="textarea" cols="30" rows="20" placeholder="enter your text..."></textarea>
               </div>
-
-
             </form>
           </div>
           <div class="wr-button">
@@ -1536,7 +1533,7 @@
       <div class="footer-inner">
         <div class="structure">
           <h2>
-            <a href="#">
+            <a href="#" tabindex="21">
               <img src="./img/header/logo.png" alt="logo" />
               <img src="./img/header/structure.png" alt="structure" />
             </a>
@@ -1551,16 +1548,16 @@
         <div class="our-services">
           <h2> <a href="#">Our Services</a> </h2>
           <ul class="block-wrapper">
-            <li><a href="#">Best Architecture</a></li>
-            <li><a href="#">Eco Energy</a></li>
-            <li><a href="#">Tiling & Painting</a></li>
-            <li><a href="#">Concrete transport</a></li>
-            <li><a href="#">Repair service</a></li>
-            <li><a href="#">Premium support</a></li>
+            <li><a href="#" tabindex="22">Best Architecture</a></li>
+            <li><a href="#" tabindex="23">Eco Energy</a></li>
+            <li><a href="#" tabindex="24">Tiling & Painting</a></li>
+            <li><a href="#" tabindex="25">Concrete transport</a></li>
+            <li><a href="#" tabindex="26">Repair service</a></li>
+            <li><a href="#" tabindex="27">Premium support</a></li>
           </ul>
         </div>
         <div class="recent-tweets">
-          <h2><a href="#">Recent Tweets</a></h2>
+          <h2><a href="#" tabindex="28">Recent Tweets</a></h2>
           <div class="block-wrapper">
             <div class="voice">
               <button>
@@ -1578,7 +1575,7 @@
                 </svg>
 
               </button>
-              <p>Duis autem eum <a href="#">#equalizzer</a> dolor it hendrerit in vulputate velit it
+              <p>Duis autem eum <a href="#" tabindex="29">#equalizzer</a> dolor it hendrerit in vulputate velit it
                 10 minutes ago
               </p>
             </div>
@@ -1598,14 +1595,14 @@
                 </svg>
 
               </button>
-              <p>Duis autem eum <a href="#">#equalizzerdolor</a> it hendreritin vulputate velit it 10 minutes ago
+              <p>Duis autem eum <a href="#" tabindex="30">#equalizzerdolor</a> it hendreritin vulputate velit it 10 minutes ago
 
               </p>
             </div>
           </div>
         </div>
-        <div class="get-in-touch">
-          <h2> <a href="#">Get in touch</a> </h2>
+        <div class="get-in-touch" id="contact">
+          <h2> <a href="#" tabindex="31">Get in touch</a> </h2>
           <div class="block-wrapper">
             <div class="block-address">
               <h3>Main Office:</h3>
