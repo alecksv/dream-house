@@ -1,5 +1,8 @@
 .offering {
   margin-top: 100px;
+  @media (max-width: 490px) {
+    margin-top: 40px;
+  }
 }
 .offering-header {
   text-align: center;

@@ -1,5 +1,8 @@
 .projects {
   margin-top: 102px;
+  @media (max-width: 490px) {
+    margin-top: 40px;
+  }
 }
 .projects-header {
   text-align: center;

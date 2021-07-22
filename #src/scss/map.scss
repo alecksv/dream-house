@@ -1,6 +1,9 @@
 .map-info {
   position: relative;
   margin-top: 100px;
+  @media (max-width: 490px) {
+    margin-top: 40px;
+  }
 }
 .map-image {
   height: 590px;
@@ -128,6 +131,7 @@
 .office-adress svg,
 .office-phone-number svg {
   width: 35px;
+  height: 35px;
   fill: #000;
   transition-duration: 2s;
 }
@@ -135,6 +139,19 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  padding-top: 90px;
+  padding-bottom: 100px;
+  background-color: #f8f8f8;
+  @media (max-width: 1400px) {
+    justify-content: space-between;
+  }
+  @media (max-width: 1050px) {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
 }
 .office-adress,
 .office-phone-number,
@@ -143,19 +160,34 @@
   flex-direction: row;
   justify-content: space-between;
   margin-right: 60px;
+  @media (max-width: 1400px) {
+    margin-right: 0;
+  }
+  @media (max-width: 1050px) {
+    justify-content: flex-start;
+  }
 }
 .office-email {
   margin-right: 0;
 }
 .office-svg {
+  width: 65px;
+  height: 55px;
+  box-sizing: border-box;
   border: 1px dashed #eec400;
   padding: 10px 15px;
+  @media (max-width: 1050px) {
+    margin-right: 20px;
+  }
 }
 .data-office {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 30px;
+  @media (max-width: 1050px) {
+    margin-left: 0;
+  }
 }
 .data-office h3 {
   font-family: "Roboto-Black", sans-serif;
@@ -163,9 +195,6 @@
   text-transform: uppercase;
 }
 .map-connection {
-  padding-top: 90px;
-  padding-bottom: 100px;
-  background-color: #f8f8f8;
 }
 .office-adress .office-svg:hover svg {
   transition-duration: 2s;

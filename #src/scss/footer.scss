@@ -8,12 +8,22 @@
   padding-top: 100px;
   padding-bottom: 100px;
   line-height: 24px;
+  @media (max-width: 490px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .footer-inner {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  @media (max-width: 1400px) {
+    flex-wrap: wrap;
+  }
+  @media (max-width: 1050px) {
+    flex-direction: column;
+  }
 }
 .footer-inner .structure {
   max-width: 270px;
